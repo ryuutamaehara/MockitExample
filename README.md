@@ -15,16 +15,13 @@ This repository is for learning Mockito.
 After completing the study, you will be able to.  
 
 * Make mock objects.
-* Create stub methods.  
+* Define a stub method. 
 * Validate stub methods.  
 * Create partial mock objects.  
 * Create spy objects.
 
 ## Code　list
 
-* 
-*
-*
-*
-*
-*
+* MockTest
+* CreatePartialMockObject
+* CreapteSpyObject
