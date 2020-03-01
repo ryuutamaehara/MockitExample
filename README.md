@@ -21,7 +21,6 @@ After completing the study, you will be able to.
 * Create spy objects.
 
 ## Code　list
-
 * MockTest
 * CreatePartialMockObject
 * CreapteSpyObject
