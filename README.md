@@ -6,8 +6,8 @@ Please note that this sentence was created by Google Translate.
 
 
 ## Version
-java 1.8.0_191 
-junit 4.13
+java 1.8.0_19  
+junit 4.13  
 mockito 1.10.19
 
 ## Overview
@@ -17,10 +17,8 @@ After completing the study, you will be able to.
 * Make mock objects.
 * Define a stub method. 
 * Validate stub methods.  
-* Create partial mock objects.  
+* Stub method definition that throws exception.
+* Definition of stub method that returns void
+* Defining stub methods for arbitrary arguments
+* Create partialMockTest mock objects.  
 * Create spy objects.
-
-## Code　list
-* MockTest
-* CreatePartialMockObject
-* CreapteSpyObject
