@@ -1,5 +1,6 @@
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -7,6 +8,7 @@ import static org.hamcrest.core.IsNull.nullValue;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.fail;
 import static org.mockito.Mockito.*;
+
 
 public class MockTest {
     @Test
@@ -65,5 +67,16 @@ public class MockTest {
         assertThat(stub.get(3), is("Test"));
         assertThat(stub.get(6), is("Test"));
         assertThat(stub.get(999), is("Test"));
+    }
+
+    @Test
+    public void createPartialMockTest() {
+        List<String> list = new ArrayList();
+        List<String> spy = spy(list);
+        when(spy.size()).thenReturn(100);
+        spy.add("Hello");
+
+        assertThat(spy.get(0), is("Hello"));
+        assertThat(spy.size(), is(100));
     }
 }
