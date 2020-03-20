@@ -79,4 +79,21 @@ public class MockTest {
         assertThat(spy.get(0), is("Hello"));
         assertThat(spy.size(), is(100));
     }
+
+    @Test
+    public void createSpyTest() {
+        List<String> list = new ArrayList();
+        List<String> spy = spy(list);
+        doReturn("Study").when(spy).get(1);
+        spy.add("Hello");
+        spy.add("World");
+
+        // addメソッドの呼び出し回数を検証
+        verify(spy).add("Hello");
+        verify(spy).add("World");
+
+        assertThat(spy.get(0), is("Hello"));
+        // spy.getした結果がdoReturnで設定した値であること
+        assertThat(spy.get(1), is("Study"));
+    }
 }
