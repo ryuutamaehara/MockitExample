@@ -1,24 +1,19 @@
 # MockitExample
 
-## Note
-I can't read and write English.  
-Please note that this sentence was created by Google Translate.
-
-
 ## Version
 java 1.8.0_19  
 junit 4.13  
 mockito 1.10.19
 
 ## Overview
-This repository is for learning Mockito.  
-After completing the study, you will be able to.  
+Mockitoによるmockの動作を確認するためのリポジトリです。
+MockTest.javaの中には次のサンプルメソッドが含まれます。
 
-* Make mock objects.
-* Define a stub method. 
-* Validate stub methods.  
-* Stub method definition that throws exception.
-* Definition of stub method that returns void
-* Defining stub methods for arbitrary arguments
-* Create partialMockTest mock objects.  
-* Create spy objects.
+- モックオブジェクトの作成  
+- スタブメソッドの定義  
+- スタブメソッドの検証  
+- 例外をスローするスタブメソッドの定義。  
+- voidを返すスタブメソッドの定義  
+- 任意の引数のスタブメソッドの定義  
+- 部分的モックオブジェクトの作成。  
+- スパイオブジェクトの作成。  
