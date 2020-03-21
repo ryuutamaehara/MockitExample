@@ -6,7 +6,7 @@ junit 4.13
 mockito 1.10.19
 
 ## Overview
-Mockitoによるmockの動作を確認するためのリポジトリです。
+Mockitoによるmockの動作を確認するためのリポジトリです。  
 MockTest.javaの中には次のサンプルメソッドが含まれます。
 
 - モックオブジェクトの作成  
